@@ -54,12 +54,9 @@ function App() {
   return (
     <div className="App">
       <header className="header-container">
-        <div className = "hero-container">
-          <div className="theme-change">
-          <i className="fa fa-adjust fa-2x"></i><span>Click here to change theme</span>
-          </div>
+        <div className = "hero-container" >
           <div className="repo">
-            <a href="https://github.com/Aman-Jain1996" target="_blank" rel="noreferrer" title="Github"><i className="fa fa-github fa-3x"></i></a>
+            <a href="https://github.com/Aman-Jain1996/Palindrome-Birthdate" target="_blank" rel="noreferrer" title="Github Repository"><i className="fa fa-github fa-3x"></i></a> Github link to this project repository
           </div>
         </div>
         <section className="content-img-container">
