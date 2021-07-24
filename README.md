@@ -1,6 +1,6 @@
 # Palindrome-Birthdate
 
-Live View : [Palindrome-Birthdate](https://github.com/facebook/create-react-app).
+Live View : [Palindrome-Birthdate](https://palindrome-birthdate.netlify.app/).
 
 1 use npm init first to initialize all the modules for project 
 
