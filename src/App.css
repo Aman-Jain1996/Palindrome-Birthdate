@@ -1,38 +1,292 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+*:root{
+  --primary-color:#CCCCFF;
+}
+
+body{
+  margin:1.5rem;
+  margin-bottom: 0;
+}
+
+a{
+  text-decoration: none;
+  color:unset;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Kalam', sans-serif;
+}
+
+.header-container{
+  background:var(--primary-color);
+  width: 100%;
+  border-radius:2rem;
+}
+
+
+.hero-container{
+  display: flex;
+  flex-flow: row wrap;
+  min-height:70px;
+  border-bottom: 2px solid #F9E79F;
+}
+
+.theme-change{
+  width:80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+
+.theme-change i {
+  padding-left:2rem;
+}
+
+.theme-change span {
+  padding-left:2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.repo{
+  width:20%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #F9E79F;
+}
+
+.content-img-container{
+  min-height:550px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-div{
+  width:60%;
+  padding: 4rem 6rem 0rem;
+  font-weight:bold;
+}
+
+.content-div h1{
+  font-size: 3rem;
+  margin-block-start: 0;
+  line-height: 3.5rem;
+  margin-block-end: 0;
+}
+
+.content-div span{
+  color:#D35400;
+}
+
+.content-div p{
+  font-size: 1.3rem;
+  padding:1rem;
+}
+
+.content-div button{
+  border-radius:1rem;
+  padding:8px 1rem;
+  border:none;
+  color:#D35400;
+  font-weight: bolder;
+  cursor:pointer;
+}
+
+.image-container{
+  width:40%;
+  padding:1rem;
+}
+
+.image-container img {
+  width:100%;
+  height: 550px;
+}
+
+#mainContent-section{
+  transition: top 2s;
+  margin: 1rem auto 8rem;
+  width:100%;
+  max-width:600px;
+  text-align:center;
+}
+
+#mainContent-section h1{
+  transition: top 2s;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  font-weight: bolder;
+  margin-block-end: 0 ;
+}
+
+#mainContent-section p{
+  max-width: 80%;
+  margin: 1rem auto;
+}
+
+#mainContent-section input{
+  margin : 2rem auto;
+  border-radius: 2rem;
+  padding:0.5rem 1rem;
+  border : 3px solid var(--primary-color);
+  display: block;
+  width:40%;
+  outline: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.ok-button{
+  border-radius:1rem;
+  padding:8px 1rem;
+  border:none;
+  color:#D35400;
+  cursor:pointer;
+  font-weight: bolder;
+  margin:auto;
+  background-color: var(--primary-color);
+  width:20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+  background-color: var(--primary-color);
+  border-radius: 0 2rem 0 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  cursor: pointer;
+  max-width: 60%;
+  margin: auto;
+  padding-bottom:1rem;
+  border-bottom: 2px solid #F9E79F;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-span {
+  display: block;
+  font-size:1.3rem;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer p{
+  text-align: center;
+  margin-block-end: 0;
+}
+
+.result-div{
+  margin-top:1.6rem;
+  font-size:1.2rem;
+  display: none;
+}
+
+#reset-button{
+  margin:0 1rem;
+  border-radius:1rem;
+  padding:8px 1rem;
+  border:2px solid var(--primary-color) ;
+  color:#D35400;
+  cursor:pointer;
+  font-weight: bolder;
+  background-color: unset;
+  width:20%;
+}
+
+@media screen and (max-width:768px) {
+  .hero-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height:70px;
+    padding:1rem;
+    border-bottom: 2px solid #F9E79F;
   }
-  to {
-    transform: rotate(360deg);
+
+  .repo{
+    display: none;
   }
+
+  .theme-change{
+    width:100%;
+    justify-content: center;
+  }
+  
+  .content-img-container{
+    flex-flow: column wrap;
+    min-height:auto;
+  }
+
+  .content-div{
+    width:100%;
+    padding: 2rem 1rem 0;
+  }
+
+  .content-div h1{
+    font-size: 2rem;
+  }
+
+  .content-div p {
+    font-size: 1.3rem;
+    padding:0;
+}
+
+.content-div button{
+  border-radius:1rem;
+  padding:8px 1rem;
+  margin: 1rem 0rem ;
+  border:none;
+  color:#D35400;
+  font-weight: bolder;
+  cursor:pointer;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  height: 200px;
+}
+
+#mainContent-section {
+  margin: 2rem auto ;
+  max-width: 100%;
+}
+
+#mainContent-section h1 {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+#mainContent-section input {
+  border-radius: 1rem;
+  width: 60%;
+}
+
+.ok-button {
+  width: 30%;
+}
+
+#reset-button {
+  width: 30%;
+}
+
+.flex {
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #F9E79F;
+}
+
 }
