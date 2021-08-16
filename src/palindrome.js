@@ -54,10 +54,9 @@ export function validateDate(checkString) {
 }
 
 export function nextPalindrome(year,month,date){
-    //console.log(year,month,date);
     for(let i=1; i>0; i++){
         date = date+1;
-        if(date > Months[month]){
+        if(date > Months[month-1]){
             date = 1;
             month = month+1;
             if(month > 12){
